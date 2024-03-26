@@ -1,0 +1,63 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-03-26 15:14:31.984327",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "instance_id",
+  "caption",
+  "column_break_iuhmd",
+  "token"
+ ],
+ "fields": [
+  {
+   "fieldname": "instance_id",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Instance ID",
+   "reqd": 1
+  },
+  {
+   "fieldname": "caption",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Caption",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_iuhmd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "token",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Token",
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-03-26 15:14:31.984327",
+ "modified_by": "Administrator",
+ "module": "PDF on Submit",
+ "name": "Whatsapp Setting",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC"
+}

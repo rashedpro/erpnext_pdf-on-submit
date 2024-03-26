@@ -1,0 +1,68 @@
+{
+ "actions": [],
+ "color": "#DB2B39",
+ "creation": "2019-06-01 03:09:42.970940",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1",
+  "enabled_for",
+  "section_break_8",
+  "create_pdf_in_background"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1",
+   "fieldtype": "Section Break",
+   "label": "Active"
+  },
+  {
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break"
+  },
+  {
+   "default": "1",
+   "fieldname": "create_pdf_in_background",
+   "fieldtype": "Check",
+   "label": "Create PDF In Background"
+  },
+  {
+   "fieldname": "enabled_for",
+   "fieldtype": "Table",
+   "label": "Enabled For",
+   "options": "Enabled DocType"
+  }
+ ],
+ "icon": "octicon octicon-file-pdf",
+ "issingle": 1,
+ "links": [],
+ "modified": "2021-01-13 15:44:40.308041",
+ "modified_by": "Administrator",
+ "module": "PDF on Submit",
+ "name": "PDF on Submit Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "Accounts Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "sort_field": "modified",
+ "sort_order": "ASC",
+ "track_changes": 1
+}
