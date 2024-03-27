@@ -4,8 +4,7 @@ import frappe
 def send_whatsapp(doc,method=None):
     customer=frappe.get_doc("Customer",doc.customer)
     whatsapp_settings=frappe.get_doc("Whatsapp Setting")
-    server_url=get_url()
-    document_url="{}/files/{}.pdf".format(server_url,doc.name)
+    document_url="https://business.tpf.deom.com.sa/files/{}.pdf".format(doc.name)
     print("$$$$$$$$$$$document_url$$$$$$$$$$$")
     print(document_url)
     url = "https://api.4whats.net/sendFile/"
