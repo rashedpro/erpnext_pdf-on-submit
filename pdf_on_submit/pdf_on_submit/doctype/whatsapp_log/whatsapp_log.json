@@ -1,65 +1,59 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2024-03-26 15:14:31.984327",
+ "creation": "2024-03-27 17:13:23.572972",
  "doctype": "DocType",
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "instance_id",
-  "caption",
-  "column_break_iuhmd",
-  "token",
-  "disable"
+  "doctype_name",
+  "column_break_6f49k",
+  "status",
+  "section_break_p16ui",
+  "log"
  ],
  "fields": [
   {
-   "fieldname": "instance_id",
+   "fieldname": "doctype_name",
    "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Instance ID",
-   "reqd": 1
+   "label": "Doctype Name"
   },
   {
-   "fieldname": "caption",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Caption",
-   "reqd": 1
+   "fieldname": "log",
+   "fieldtype": "Long Text",
+   "label": "Log"
   },
   {
-   "fieldname": "column_break_iuhmd",
+   "fieldname": "column_break_6f49k",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "token",
+   "fieldname": "status",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Token",
-   "reqd": 1
+   "label": "Status"
   },
   {
-   "default": "0",
-   "fieldname": "disable",
-   "fieldtype": "Check",
-   "label": "Disable"
+   "fieldname": "section_break_p16ui",
+   "fieldtype": "Section Break"
   }
  ],
  "index_web_pages_for_search": 1,
- "issingle": 1,
  "links": [],
- "modified": "2024-03-27 17:06:05.057431",
+ "modified": "2024-03-28 00:13:11.356994",
  "modified_by": "Administrator",
  "module": "PDF on Submit",
- "name": "Whatsapp Setting",
+ "name": "Whatsapp Log",
  "owner": "Administrator",
  "permissions": [
   {
    "create": 1,
    "delete": 1,
    "email": 1,
+   "export": 1,
    "print": 1,
    "read": 1,
+   "report": 1,
    "role": "System Manager",
    "share": 1,
    "write": 1
