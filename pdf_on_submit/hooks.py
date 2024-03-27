@@ -87,7 +87,6 @@ doc_events = {
 #   }
     "*": {
         "on_submit": "pdf_on_submit.attach_pdf.attach_pdf",
-        "on_update_after_submit":"pdf_on_submit.attach_pdf.test"
     },
     "Sales Invoice":{
         "on_submit":"pdf_on_submit.send_whatsapp.send_whatsapp"
