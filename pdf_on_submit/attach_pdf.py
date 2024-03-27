@@ -22,6 +22,8 @@ from frappe import publish_progress
 from frappe.core.doctype.file.file import create_new_folder
 from frappe.utils.file_manager import save_file
 from frappe.model.naming import _format_autoname
+from pdf_on_submit.send_whatsapp import send_whatsapp
+
 
 
 def attach_pdf(doc, event=None):
@@ -48,7 +50,7 @@ def attach_pdf(doc, event=None):
     else:
         execute(**args)
 
-
+    send_whatsapp(doc)
 def enqueue(args):
     """Add method `execute` with given args to the queue."""
     frappe.enqueue(method=execute, queue='long',
